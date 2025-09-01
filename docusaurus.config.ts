@@ -2,45 +2,35 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
-  title: 'My Portfolio',
-  tagline: 'Test',
-  favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://saritahimthani.github.io', // your GitHub Pages URL
-  baseUrl: '/portfolio/',                  // must match repo name
-
+  title: 'Sarita Himthani',
+  tagline: 'Data Scientist & Software Engineer',
+  favicon: 'img/favico.ico',
+  
+  // Set the production URL of your site here
+  url: 'https://saritahimthani.github.io',
+  baseUrl: '/portfolio/',
   trailingSlash: false,
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  
+  // GitHub pages deployment config
+  organizationName: 'saritahimthani', // Your GitHub username
+  projectName: 'portfolio', // Your repo name
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  
+  // Internationalization
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  
   presets: [
     [
       'classic',
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/saritahimthani/portfolio/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -48,14 +38,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          editUrl: 'https://github.com/saritahimthani/portfolio/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -63,26 +46,23 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/favico.ico',
     navbar: {
-      title: 'My Site',
+      title: 'Sarita Himthani',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'SH Logo',
+        src: 'img/favico.ico', // You'll need to create this logo file
       },
       items: [
+        {to: '/about', label: 'About', position: 'right'},
+        {to: '/experience', label: 'Experience', position: 'right'},
+        {to: '/projects', label: 'Projects', position: 'right'},
+        {to: '/skills', label: 'Skills', position: 'right'},
+        {to: '/blog', label: 'Blog', position: 'right'},
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/saritahimthani',
           label: 'GitHub',
           position: 'right',
         },
@@ -92,48 +72,43 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Portfolio',
           items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
+            {label: 'About', to: '/about'},
+            {label: 'Experience', to: '/experience'},
+            {label: 'Projects', to: '/projects'},
           ],
         },
         {
-          title: 'Community',
+          title: 'Connect',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/saritah28/', // Update with your LinkedIn URL
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/saritahimthani',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Kaggle',
+              href: 'https://www.kaggle.com/saritahimthani',
             },
+            {
+              label: 'Leetcode',
+              href: 'https://leetcode.com/u/sh14288n/'
+            }
           ],
         },
         {
           title: 'More',
           items: [
-            { to: '/projects', label: 'Projects', position: 'left' },
-            { to: '/about', label: 'About', position: 'left' },  
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
+            {label: 'Blog', to: '/blog'},
+            {label: 'Skills', to: '/skills'},
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Sarita Himthani. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

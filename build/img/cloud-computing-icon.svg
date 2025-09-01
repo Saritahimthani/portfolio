@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="50" fill="url(#grad3)" fill-opacity="0.1" />
+  <g transform="translate(106, 106) scale(0.6)">
+    <!-- Cloud Shape -->
+    <path d="M200,115 Q155,115 140,145 Q100,145 100,185 Q100,225 140,225 L260,225 Q300,225 300,185 Q300,145 260,145 Q245,115 200,115 Z" fill="none" stroke="#60A5FA" stroke-width="12" />
+    
+    <!-- Server Racks -->
+    <rect x="130" y="265" width="140" height="30" rx="5" fill="#3B82F6" />
+    <rect x="140" y="275" width="10" height="10" rx="2" fill="#60A5FA" />
+    <rect x="160" y="275" width="10" height="10" rx="2" fill="#60A5FA" />
+    
+    <rect x="130" y="305" width="140" height="30" rx="5" fill="#3B82F6" />
+    <rect x="140" y="315" width="10" height="10" rx="2" fill="#60A5FA" />
+    <rect x="160" y="315" width="10" height="10" rx="2" fill="#60A5FA" />
+    
+    <!-- Connection Lines -->
+    <path d="M200,225 L200,265" fill="none" stroke="#3B82F6" stroke-width="6" stroke-dasharray="5,5" />
+    <path d="M320,175 L380,175" fill="none" stroke="#3B82F6" stroke-width="6" />
+    
+    <!-- Data Transfer Symbol -->
+    <circle cx="400" cy="175" r="20" fill="#60A5FA" />
+    <path d="M390,175 L410,175 M400,165 L410,175 L400,185" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Connecting Devices -->
+    <rect x="380" y="235" width="40" height="60" rx="5" fill="#3B82F6" />
+    <rect x="390" y="245" width="20" height="30" rx="2" fill="#60A5FA" />
+    <circle cx="400" cy="285" r="5" fill="#60A5FA" />
+    
+    <path d="M400,195 L400,235" fill="none" stroke="#3B82F6" stroke-width="6" stroke-dasharray="5,5" />
+  </g>
+</svg>

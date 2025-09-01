@@ -1,0 +1,214 @@
+.experienceHero {
+    padding: 3rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #4c68d7 0%, #2b5876 100%);
+    color: white;
+  }
+  
+  .experienceSection {
+    margin-bottom: 3rem;
+  }
+  
+  .sectionTitle {
+    color: var(--ifm-color-primary);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--ifm-color-primary-lighter);
+  }
+  
+  /* Work Experience Timeline */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--ifm-color-primary-lighter);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: -2px;
+  }
+  
+  .timelineItem {
+    padding: 0 0 2rem 2.5rem;
+    position: relative;
+  }
+  
+  .timelineItem::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    background-color: white;
+    border: 4px solid var(--ifm-color-primary);
+    border-radius: 50%;
+    z-index: 1;
+    top: 5px;
+  }
+  
+  .timelineContent {
+    padding: 1.25rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .jobHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  
+  .jobTitle {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--ifm-color-primary-dark);
+    font-weight: 600;
+  }
+  
+  .jobPeriod {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .companyInfo {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .companyName {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .companyLocation {
+    color: #666;
+  }
+  
+  .responsibilitiesList {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  
+  .responsibilitiesList li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+  
+  /* Projects Section */
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .projectsGrid {
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+  }
+  
+  .projectCard {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .projectHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+  }
+  
+  .projectTitle {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    color: var(--ifm-color-primary-dark);
+  }
+  
+  .projectPeriod {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .projectTech {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .techLabel {
+    font-weight: 600;
+  }
+  
+  .projectDescription {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  
+  .projectDescription li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+  
+  /* Extracurricular Activities */
+  .extracurricularItem {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .extracurricularHeader {
+    margin-bottom: 1rem;
+  }
+  
+  .extracurricularHeader h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    color: var(--ifm-color-primary-dark);
+  }
+  
+  .extracurricularRole {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  
+  .extracurricularPeriod {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .extracurricularList {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  
+  .extracurricularList li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }

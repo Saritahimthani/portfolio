@@ -4,13 +4,14 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
-  "favicon": "img/favicon.ico",
-  "url": "https://your-docusaurus-site.example.com",
-  "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "title": "Sarita Himthani",
+  "tagline": "Data Scientist & Software Engineer",
+  "favicon": "img/favico.ico",
+  "url": "https://saritahimthani.github.io",
+  "baseUrl": "/portfolio/",
+  "trailingSlash": false,
+  "organizationName": "saritahimthani",
+  "projectName": "portfolio",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
@@ -27,7 +28,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.ts",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/saritahimthani/portfolio/tree/main/"
         },
         "blog": {
           "showReadingTime": true,
@@ -38,10 +39,7 @@ export default {
             ],
             "xslt": true
           },
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          "onInlineTags": "warn",
-          "onInlineAuthors": "warn",
-          "onUntruncatedBlogPosts": "warn"
+          "editUrl": "https://github.com/saritahimthani/portfolio/tree/main/"
         },
         "theme": {
           "customCss": "./src/css/custom.css"
@@ -50,27 +48,41 @@ export default {
     ]
   ],
   "themeConfig": {
-    "image": "img/docusaurus-social-card.jpg",
+    "image": "img/favico.ico",
     "navbar": {
-      "title": "My Site",
+      "title": "Sarita Himthani",
       "logo": {
-        "alt": "My Site Logo",
-        "src": "img/logo.svg"
+        "alt": "SH Logo",
+        "src": "img/favico.ico"
       },
       "items": [
         {
-          "type": "docSidebar",
-          "sidebarId": "tutorialSidebar",
-          "position": "left",
-          "label": "Tutorial"
+          "to": "/about",
+          "label": "About",
+          "position": "right"
+        },
+        {
+          "to": "/experience",
+          "label": "Experience",
+          "position": "right"
+        },
+        {
+          "to": "/projects",
+          "label": "Projects",
+          "position": "right"
+        },
+        {
+          "to": "/skills",
+          "label": "Skills",
+          "position": "right"
         },
         {
           "to": "/blog",
           "label": "Blog",
-          "position": "left"
+          "position": "right"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/saritahimthani",
           "label": "GitHub",
           "position": "right"
         }
@@ -81,28 +93,40 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Docs",
+          "title": "Portfolio",
           "items": [
             {
-              "label": "Tutorial",
-              "to": "/docs/intro"
+              "label": "About",
+              "to": "/about"
+            },
+            {
+              "label": "Experience",
+              "to": "/experience"
+            },
+            {
+              "label": "Projects",
+              "to": "/projects"
             }
           ]
         },
         {
-          "title": "Community",
+          "title": "Connect",
           "items": [
             {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
+              "label": "LinkedIn",
+              "href": "https://www.linkedin.com/in/saritah28/"
             },
             {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
+              "label": "GitHub",
+              "href": "https://github.com/saritahimthani"
             },
             {
-              "label": "X",
-              "href": "https://x.com/docusaurus"
+              "label": "Kaggle",
+              "href": "https://www.kaggle.com/saritahimthani"
+            },
+            {
+              "label": "Leetcode",
+              "href": "https://leetcode.com/u/sh14288n/"
             }
           ]
         },
@@ -110,27 +134,17 @@ export default {
           "title": "More",
           "items": [
             {
-              "to": "/projects",
-              "label": "Projects",
-              "position": "left"
-            },
-            {
-              "to": "/about",
-              "label": "About",
-              "position": "left"
-            },
-            {
               "label": "Blog",
               "to": "/blog"
             },
             {
-              "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "label": "Skills",
+              "to": "/skills"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2025 Sarita Himthani. Built with Docusaurus."
     },
     "prism": {
       "theme": {
