@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Sarita Himthani',
-  tagline: 'Data Scientist & Software Engineer',
+  tagline: 'Applied Data Scientist',
   favicon: 'img/favico.ico',
   
   // Set the production URL of your site here
@@ -96,7 +96,7 @@ const config: Config = {
             },
             {
               label: 'Leetcode',
-              href: 'https://leetcode.com/u/sh14288n/'
+              href: 'https://leetcode.com/u/sarita-himthani/'
             }
           ],
         },
