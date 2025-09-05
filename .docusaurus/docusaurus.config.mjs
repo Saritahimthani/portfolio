@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Sarita Himthani",
-  "tagline": "Data Scientist & Software Engineer",
+  "tagline": "Applied Data Scientist",
   "favicon": "img/favico.ico",
   "url": "https://saritahimthani.github.io",
   "baseUrl": "/portfolio/",
@@ -126,7 +126,7 @@ export default {
             },
             {
               "label": "Leetcode",
-              "href": "https://leetcode.com/u/sh14288n/"
+              "href": "https://leetcode.com/u/sarita-himthani/"
             }
           ]
         },
